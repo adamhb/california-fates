@@ -9,11 +9,10 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="ahb-case"
+export CASE_NAME="test-ensemble-080823_v2"
 export NINST=36
-export WORK_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
+export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
-export HLM="CLM"
 export HOSTMODEL_PATH=${HOME}/CTSM
 export FATESMODEL_PATH="${HOSTMODEL_PATH}/src/fates"
 export HLM_HASH="${HLM}-$(cd ${HOSTMODEL_PATH};   git log -n 1 --pretty=%h)"
@@ -22,10 +21,13 @@ export CASE_NAME="${CASE_NAME}_${HLM_HASH}_${FATES_HASH}"
 export CASE_ROOT="/glade/u/home/adamhb/cases" # dir to put cases
 export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 
-# Set parameter file(s)
+
+# Set fates parameter file(s)
+
 # Base name of your parameter file (without the _0001, etc)
 export PARAM_FILE_BASE_NAME=ca_ahb_5pfts_080623
-# Directory where the paramneter files are stored
+
+# Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
 export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/test_ensemble_080723
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
@@ -38,10 +40,10 @@ export PROJECT="UCDV0027"
 
 # Set driver data
 export SITE_NAME="CZ2_wrf_1950_1980" # dir for site-specific datasets
-export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
-export SURF_PATH="${SITE_PATH}/${SURF_DATA}
 export SITE_BASE_PATH="/glade/scratch/adamhb/my_subset_data" # dir for site datasets
 export SITE_PATH="${SITE_BASE_PATH}/${SITE_NAME}"
+export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
+export SURF_PATH="${SITE_PATH}/${SURF_DATA}"
 export METD_CALENDAR="NO_LEAP"
 
 # Run settings 
@@ -53,9 +55,12 @@ export DEBUG_LEVEL=0
 export SIMUL_ROOT="/glade/scratch/adamhb/archive" # dir to put output
 export SIMUL_PATH="${SIMUL_ROOT}/${CASE_NAME}"
 
+cd ${CIME_PATH}
+
 # Create case
 ./create_newcase --case=${CASE_PATH} --res=${RES} --compset=${COMPSET} --mach=${MACH} --project=${PROJECT} --run-unsupported --ninst=${NINST}
 
+cd ${CASE_PATH}
 
 # Driver data settings
 ./xmlchange CLM_USRDAT_NAME="${SITE_NAME}"
@@ -71,7 +76,7 @@ export SIMUL_PATH="${SIMUL_ROOT}/${CASE_NAME}"
 DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
-./xmlchange STOP_OPTION="nyears'
+./xmlchange STOP_OPTION="nyears"
 ./xmlchange STOP_N=5
 ./xmlchange RUN_STARTDATE="1900-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
@@ -86,7 +91,7 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Create user_nl_clm for each ensemble member
 
-for x in `seq 1 1 $ninst`; do
+for x in `seq 1 1 $NINST`; do
 
 expstr=$(printf %04d $x)
 echo $expstr
@@ -145,9 +150,12 @@ done
 
 # Set up the case
 ./case.setup
-./preview_namelists
+#./preview_namelists # Creates namelist and other model input files by running each
+# component's buildnml script.
+
 ./case.build --clean
 ./case.build
 
 # Return to the original path.
 cd ${HERE_PATH}
+echo "Created new case: ${CASE_PATH}"

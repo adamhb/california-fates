@@ -1,34 +1,34 @@
 fates_name,min_value,max_value,mean,median,sample_size,subset_name,sources,pft
-fates_allom_la_per_sa_int,0.0011300000000000001,0.00701,0.00407,0.00407,2,all_shrubs,jepson,shrub
-fates_allom_la_per_sa_int,0.000638,0.00118,0.0009090000000000001,0.0009090000000000001,2,arct-cean,jepson,shrub
-fates_leaf_slatop,0.005643825341081722,0.053799999999999994,0.01158489746083515,0.009190420832084873,102,arct-cean,"Anacker_et_al_2012,jepson,try",shrub
-fates_leaf_slatop,0.0056505999999999995,0.095209512196,0.02636630319786766,0.021852920353548997,189,all_shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_leaf_slatop,0.0067399999999999995,0.053799999999999994,0.012299821866653715,0.00881109727013108,31,target-shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_leaf_slatop,0.0067399999999999995,0.095209512196,0.034310519404749815,0.029532881354,129,montane-shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.55860288088509,86.9600176230862,18,montane-shrubs,misson,shrub
-fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.55860288088509,86.9600176230862,18,all_shrubs,misson,shrub
-fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.55860288088509,86.9600176230862,18,target-shrubs,misson,shrub
-fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.55860288088509,86.9600176230862,18,arct-cean,misson,shrub
-fates_stoich_nitr,0.014965271351571306,0.05491202030033833,0.03660217495698863,0.044510818569849356,7,montane-shrubs,"Anacker_et_al_2012,jepson",shrub
-fates_stoich_nitr,0.014378474668638523,0.05491202030033833,0.030079388984780086,0.03013635570225707,21,arct-cean,"Anacker_et_al_2012,jepson",shrub
-fates_stoich_nitr,0.014965271351571306,0.05491202030033833,0.03139193889130344,0.02370609702640731,11,all_shrubs,"Anacker_et_al_2012,jepson",shrub
-fates_stoich_nitr,0.014965271351571306,0.05491202030033833,0.036663413089874815,0.044510818569849356,5,target-shrubs,"Anacker_et_al_2012,jepson",shrub
-fates_wood_density,0.5712090638488149,0.8187307530779818,0.6815251864935375,0.6789,16,montane-shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_wood_density,0.5712090638488149,0.8187307530779818,0.6860516008938,0.6789,13,target-shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_wood_density,0.5712090638488149,0.891,0.6963442497498794,0.6792,32,all_shrubs,"Anacker_et_al_2012,jepson,try",shrub
-fates_wood_density,0.4867522559599717,1.1735108709918103,0.6774547650520543,0.6703200460356393,30,arct-cean,"Anacker_et_al_2012,jepson,try",shrub
-fates_allom_dbh_maxheight,8.45614339048984,16.714356780888586,12.585250085689214,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2h1,0.5820845357502413,0.7293812709172609,0.6557329033337511,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2h2,-0.5846468433985335,-0.47212238423778846,-0.5283846138181609,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2bl1,0.011354463401103665,0.02703712081907398,0.019195792110088823,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2bl2,1.6753110151687585,2.037707912929032,1.8565094640488953,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_agb1,0.02435588720088,0.02721850858889984,0.02578719789488992,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_agb2,2.5653705320225906,2.6070498137972504,2.5862101729099205,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_blca_expnt_diff,-0.4803791194489595,-0.6662217708366838,-0.5733004451428216,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_blca_expnt_diff,-0.4803791194489595,-0.6662217708366838,-0.5733004451428216,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2ca_coefficient_min,0.1529181387204178,0.20688924650409463,0.17990369261225622,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_allom_d2ca_coefficient_max,0.2282435894727728,0.30880015046316317,0.268521869967968,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_mort_ip_size_senescence,16.0,24.0,20.0,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_la_per_sa_int,0.00113,0.00701,0.00407,0.00407,2,all_shrubs,jepson,shrub
+fates_allom_la_per_sa_int,0.000638,0.00118,0.000909,0.000909,2,arct-cean,jepson,shrub
+fates_leaf_slatop,0.005643825341082,0.0538,0.011584897460835,0.009190420832085,102,arct-cean,"Anacker_et_al_2012,jepson,try",shrub
+fates_leaf_slatop,0.0056506,0.095209512196,0.026366303197868,0.021852920353549,189,all_shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_leaf_slatop,0.00674,0.0538,0.012299821866654,0.008811097270131,31,target-shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_leaf_slatop,0.00674,0.095209512196,0.03431051940475,0.029532881354,129,montane-shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.5586028808851,86.9600176230862,18,montane-shrubs,misson,shrub
+fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.5586028808851,86.9600176230862,18,all_shrubs,misson,shrub
+fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.5586028808851,86.9600176230862,18,target-shrubs,misson,shrub
+fates_leaf_vcmax25top,43.7834563277894,136.317876418108,86.5586028808851,86.9600176230862,18,arct-cean,misson,shrub
+fates_stoich_nitr,0.014965271351571,0.054912020300338,0.036602174956989,0.044510818569849,7,montane-shrubs,"Anacker_et_al_2012,jepson",shrub
+fates_stoich_nitr,0.014378474668639,0.054912020300338,0.03007938898478,0.030136355702257,21,arct-cean,"Anacker_et_al_2012,jepson",shrub
+fates_stoich_nitr,0.014965271351571,0.054912020300338,0.031391938891304,0.023706097026407,11,all_shrubs,"Anacker_et_al_2012,jepson",shrub
+fates_stoich_nitr,0.014965271351571,0.054912020300338,0.036663413089875,0.044510818569849,5,target-shrubs,"Anacker_et_al_2012,jepson",shrub
+fates_wood_density,0.571209063848815,0.818730753077982,0.681525186493537,0.6789,16,montane-shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_wood_density,0.571209063848815,0.818730753077982,0.6860516008938,0.6789,13,target-shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_wood_density,0.571209063848815,0.891,0.696344249749879,0.6792,32,all_shrubs,"Anacker_et_al_2012,jepson,try",shrub
+fates_wood_density,0.486752255959972,1.17351087099181,0.677454765052054,0.670320046035639,30,arct-cean,"Anacker_et_al_2012,jepson,try",shrub
+fates_allom_dbh_maxheight,8.45614339048984,16.7143567808886,12.5852500856892,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2h1,0.582084535750241,0.729381270917261,0.655732903333751,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2h2,-0.584646843398533,-0.472122384237789,-0.528384613818161,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2bl1,0.011354463401104,0.027037120819074,0.019195792110089,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2bl2,1.67531101516876,2.03770791292903,1.8565094640489,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_agb1,0.02435588720088,0.0272185085889,0.02578719789489,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_agb2,2.56537053202259,2.60704981379725,2.58621017290992,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_blca_expnt_diff,-0.480379119448959,-0.666221770836684,-0.573300445142822,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_blca_expnt_diff,-0.480379119448959,-0.666221770836684,-0.573300445142822,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2ca_coefficient_min,0.152918138720418,0.206889246504095,0.179903692612256,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_allom_d2ca_coefficient_max,0.228243589472773,0.308800150463163,0.268521869967968,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_mort_ip_size_senescence,16,24,20,,86,target_shrubs,"Conti et al., 2019",shrub
 fates_mort_r_size_senescence,0.48,0.72,0.6,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_mort_ip_age_senescence,56.0,84.0,70.0,,86,target_shrubs,"Conti et al., 2019",shrub
-fates_mort_r_age_senescence,0.08000000000000002,0.12,0.1,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_mort_ip_age_senescence,56,84,70,,86,target_shrubs,"Conti et al., 2019",shrub
+fates_mort_r_age_senescence,0.08,0.12,0.1,,86,target_shrubs,"Conti et al., 2019",shrub

@@ -9,8 +9,8 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="QUKE-ensemble-081723"
-export NINST=72
+export CASE_NAME="QUKE-ensemble-081823"
+export NINST=36
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -25,11 +25,11 @@ export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 # Set fates parameter file(s)
 
 # Base name of your parameter file (without the _0001, etc)
-export PARAM_FILE_BASE_NAME=black_oak_test_081723
+export PARAM_FILE_BASE_NAME=black_oak_test_081823
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/black_oak_ensemble_081723
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/black_oak_ensemble_081823
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings

@@ -1,0 +1,11 @@
+fates_name,min_value,max_value,mean,median,sample_size,subset_name,sources,pft
+fates_leaf_slatop,0.01698,0.022378,0.018568499357343,0.016988023443472,8,QUKE,try,oak
+fates_stoich_nitr,0.0306,0.039,0.0343825,0.033965,4,QUKE,try,oak
+fates_wood_density,0.51,0.72,0.58,0.51,3,QUKE,try,oak
+fates_leaf_slatop,0.01283193015838,0.01283193015838,0.01283193015838,0.01283193015838,1,QUCH,try,oak
+fates_stoich_nitr,0.0208,0.0208,0.0208,0.0208,1,QUCH,try,oak
+fates_wood_density,0.63,0.7,0.66583333325,0.6666666665,4,QUCH,try,oak
+fates_leaf_slatop,0.0109564,0.029333333334,0.015171200571495,0.0143777777778,126,QUDO,try,oak
+fates_leaf_vcmax25top,13.6306280559361,127.296133005544,65.1118667521462,64.2077696743728,56,QUDO,try,oak
+fates_stoich_nitr,0.029777399137941,0.049692939422336,0.038271444635911,0.036927982607,130,QUDO,try,oak
+fates_wood_density,0.75,0.75,0.75,0.75,1,QUDO,try,oak

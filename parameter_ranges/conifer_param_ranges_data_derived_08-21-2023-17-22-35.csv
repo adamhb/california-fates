@@ -1,0 +1,12 @@
+fates_name,min_value,max_value,mean,median,sample_size,subset_name,sources
+fates_leaf_slatop,0.0044124,0.0168224299066,0.010273296161577,0.0095202,98,ABCO,try
+fates_nonhydro_smpsc,-8.4,-3.249,-4.73942946200689,-4.51,14,ABCO,try
+fates_turnover_leaf,7.7,7.7,7.7,7.7,1,ABCO,try
+fates_wood_density,0.2906,0.4869,0.394753846153846,0.3978,26,ABCO,try
+fates_nonhydro_smpsc,-10.4355959946276,-4.92219563028228,-7.71213998672747,-7.745384161,5,CADE,try
+fates_wood_density,0.26,0.6,0.392625,0.36,8,CADE,try
+fates_leaf_slatop,0.00188,0.03308,0.009242577233235,0.0077261512354,247,PIPO,try
+fates_leaf_vcmax25top,48.72,76.272,62.496,62.496,2,PIPO,try
+fates_nonhydro_smpsc,-5.44836,0.67,-2.32581585494413,-2.1,81,PIPO,try
+fates_turnover_leaf,3,3,3,3,1,PIPO,try
+fates_wood_density,0.35,0.5071,0.441146897486861,0.4544,35,PIPO,try

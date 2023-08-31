@@ -1,0 +1,6 @@
+param,pft,organ,value_min,value_max
+fates_allom_d2ca_coefficient_min,1,NaN,0.024547552784775,0.033211394944107
+fates_allom_d2ca_coefficient_max,1,NaN,0.070441451906708,0.095303140814958
+fates_allom_blca_expnt_diff,1,NaN,-0.004620930411389,0.230690779601353
+fates_allom_d2h1,1,NaN,0.808991514552039,0.853719886041187
+fates_allom_d2h2,1,NaN,-0.028156317217275,0.044556235166117

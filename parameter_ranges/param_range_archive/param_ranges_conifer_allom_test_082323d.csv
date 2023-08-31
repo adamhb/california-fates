@@ -1,0 +1,4 @@
+param,pft,organ,value_min,value_max
+fates_allom_d2h1,1,NaN,0.808,0.8537
+fates_allom_d2h2,1,NaN,-0.02815632,0.04455624
+fates_allom_dbh_maxheight,1,NaN,60,80

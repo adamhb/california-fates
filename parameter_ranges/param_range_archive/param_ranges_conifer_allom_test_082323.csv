@@ -1,0 +1,4 @@
+param,pft,organ,value_min,value_max
+fates_allom_d2ca_coefficient_min,1,NaN,0.4,0.8
+fates_mort_scalar_cstarvation,1,NaN,0.1,0.3
+

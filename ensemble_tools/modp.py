@@ -18,8 +18,8 @@ def main(var, pft, fin, val, fout, O, organ):
     tempfilename = os.path.join(tempdir, 'temp_fates_param_file.nc')
     ncfile_old = None
     outputfname = fout
-       
     outputval = float(val)
+
     pft = int(pft)
    
     shutil.copyfile(fin, tempfilename)
@@ -29,7 +29,16 @@ def main(var, pft, fin, val, fout, O, organ):
 
        
     if pft == 0 : 
-        var.assignValue(outputval)
+        ndim = len(var.dimensions)
+        if ndim > 0:
+            length_dim = var.shape[0]
+            if np.isnan(organ):
+                for i in range(length_dim):
+                    var[i] = outputval
+            else:
+                var[int(organ-1)] = outputval
+        else:
+            var.assignValue(outputval)
     else : 
         ndim = len(var.dimensions)
         if ndim == 1:

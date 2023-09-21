@@ -1,4 +1,4 @@
-param,pft,organ,value_min,value_max
+s,pft,organ,value_min,value_max
 fates_allom_d2ca_coefficient_min,1,NaN,0.257,0.37
 fates_allom_d2ca_coefficient_min,4,NaN,0.1799,0.2685
 fates_allom_d2ca_coefficient_min,5,NaN,0.6332,1.6444

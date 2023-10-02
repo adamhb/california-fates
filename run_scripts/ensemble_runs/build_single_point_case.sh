@@ -9,7 +9,7 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="conifer-allom-090123_5pfts"
+export CASE_NAME="conifer-allom-092123_5pfts"
 export NINST=108
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -25,11 +25,11 @@ export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 # Set fates parameter file(s)
 
 # Base name of your parameter file (without the _0001, etc)
-export PARAM_FILE_BASE_NAME=conifer_allom_090123_5pfts
+export PARAM_FILE_BASE_NAME=ca_5pfts_091923
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/conifer_allom_090123_5pfts
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_ahb_5pfts_092123
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -67,7 +67,7 @@ cd ${CASE_PATH}
 ./xmlchange DIN_LOC_ROOT_CLMFORC="${SITE_BASE_PATH}"
 ./xmlchange DATM_MODE="1PT"
 ./xmlchange CLM_CO2_TYPE="constant"
-./xmlchange CCSM_CO2_PPMV=321
+./xmlchange CCSM_CO2_PPMV=280
 ./xmlchange PTS_LON=240.7434
 ./xmlchange PTS_LAT=37.0311
 ./xmlchange DATM_YR_START=1951 #get 1950 data in there too if it exists (check email from Xiulin)
@@ -77,7 +77,7 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=150
+./xmlchange STOP_N=100
 ./xmlchange RUN_STARTDATE="1900-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

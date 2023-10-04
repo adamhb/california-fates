@@ -9,8 +9,8 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="conifer-allom-100223_5pfts"
-export NINST=216
+export CASE_NAME="ca_resprout_100323"
+export NINST=36
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -25,11 +25,11 @@ export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 # Set fates parameter file(s)
 
 # Base name of your parameter file (without the _0001, etc)
-export PARAM_FILE_BASE_NAME=ca_5pfts_091923
+export PARAM_FILE_BASE_NAME=ca_5pfts_100323_resprout
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_ahb_5pfts_100223
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/resprout_test_100323
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -77,8 +77,8 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=20
-./xmlchange RESUBMIT=4
+./xmlchange STOP_N=50
+./xmlchange RESUBMIT=1
 ./xmlchange RUN_STARTDATE="1900-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

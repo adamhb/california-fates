@@ -9,7 +9,7 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="ca_resprout_100323"
+export CASE_NAME="ca_resprout_100423"
 export NINST=36
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -29,7 +29,7 @@ export PARAM_FILE_BASE_NAME=ca_5pfts_100323_resprout
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/resprout_test_100323
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/resprout_test_100423
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings

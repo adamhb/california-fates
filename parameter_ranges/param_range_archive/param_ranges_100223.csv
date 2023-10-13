@@ -96,7 +96,7 @@ pine,fates_allom_d2ca_coefficient_max,3,NaN,0.25695434,0.45,,"Tallo, McPherson_2
 FALSE,fates_allom_d2ca_coefficient_max,4,NaN,0.13,0.26852187,,"Conti et al., 2019; moved this a little lower than 1 SE from the mean based on initial testing","Conti et al., 2019",,,,
 FALSE,fates_allom_d2ca_coefficient_max,5,NaN,0.4332177,1.34406949,,McPherson. Then I lowered from 0.6 to 0.4 because the lower values seemed to aid coexistence in initial tests,"McPherson, then I lowered from 1.6 to 1.3 because this seemed to aid coexistence in intiail tests",,,,
 fates_allom_d2ca_coefficient_max,fates_allom_d2ca_coefficient_min,0,NaN,,,,,,,,,
-FALSE,fates_allom_agb1,1,NaN,0.064731,0.0841503,NA,Chojnacky (AGB) and Baad,tuning,,,,
+FALSE,fates_allom_agb1,1,NaN,0.064731,0.0841503,NA,Chojnacky (AGB) and Baad,tuning. This was moved up by 30% from original fit to better match observations,,,,
 pine,fates_allom_agb1,2,NaN,0.064731,0.0841503,,,,,,,
 pine,fates_allom_agb1,3,NaN,0.064731,0.0841503,,,,,,,
 FALSE,fates_allom_agb1,5,NaN,0.08534,0.110942,,Chojnacky (AGB) and Baad,tuning,,"Variation in this parameter is here so that we can have a better chance to match observations of AGB. Initial tests showed a low bias in AGB, we took the data-derived value and added 30% to get a max range for the parameter",,

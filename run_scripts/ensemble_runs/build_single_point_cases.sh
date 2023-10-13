@@ -8,9 +8,11 @@
 # This script was developed based on prior
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
+case_number=$1
+
 #Name the case
-export CASE_NAME="ca_5pfts_1512mem_100823"
-export NINST=1512
+export CASE_NAME="ca_5pfts_20cases_4320inst_101223_$case_number"
+export NINST=216
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -29,7 +31,7 @@ export PARAM_FILE_BASE_NAME=ca_5pfts_100523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_ahb_5pfts_1512_100823
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_5pfts_20cases_4320inst_101223_$case_number
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -77,8 +79,8 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=25
-./xmlchange RESUBMIT=3
+./xmlchange STOP_N=50
+./xmlchange RESUBMIT=1
 ./xmlchange RUN_STARTDATE="1900-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

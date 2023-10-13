@@ -9,8 +9,8 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="ca_5pfts_1512mem_100823"
-export NINST=1512
+export CASE_NAME="ca_5pfts_5004mem_100523"
+export NINST=5004
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -29,7 +29,7 @@ export PARAM_FILE_BASE_NAME=ca_5pfts_100523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_ahb_5pfts_1512_100823
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_ahb_5pfts_100523
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -58,7 +58,7 @@ export SIMUL_PATH="${SIMUL_ROOT}/${CASE_NAME}"
 cd ${CIME_PATH}
 
 # Create case
-./create_newcase --case=${CASE_PATH} --res=${RES} --compset=${COMPSET} --mach=${MACH} --project=${PROJECT} --run-unsupported --ninst=${NINST}
+./create_newcase --case=${CASE_PATH} --res=${RES} --compset=${COMPSET} --mach=${MACH} --project=${PROJECT} --run-unsupported --ninst=${NINST} --multi-driver
 
 cd ${CASE_PATH}
 

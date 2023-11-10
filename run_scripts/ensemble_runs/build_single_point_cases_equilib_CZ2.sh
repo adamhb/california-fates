@@ -11,8 +11,8 @@
 case_number=$1
 
 #Name the case
-export CASE_NAME="ca_5pfts_ml_assisted_2160_110323_$case_number"
-export NINST=108
+export CASE_NAME="CZ2_equilibrium_110523_$case_number"
+export NINST=72
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -27,11 +27,11 @@ export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 # Set fates parameter file(s)
 
 # Base name of your parameter file (without the _0001, etc)
-export PARAM_FILE_BASE_NAME=ca_5pfts_100523
+export PARAM_FILE_BASE_NAME=CZ2_equilibrium_110523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ca_5pfts_ml_assisted_2160_110323_$case_number
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/CZ2_equilibrium_110523_$case_number
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -80,7 +80,7 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
 ./xmlchange STOP_N=100
-./xmlchange RESUBMIT=0
+./xmlchange RESUBMIT=3
 ./xmlchange RUN_STARTDATE="1900-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

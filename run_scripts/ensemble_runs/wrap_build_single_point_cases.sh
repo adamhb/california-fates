@@ -5,7 +5,7 @@ n=$1  # Get the number 'n' from the first argument
 for (( i=1; i<=n; i++ )); do
    number_with_leading_zero=$(printf "%02d" $i)
    
-   ./build_single_point_cases.sh $number_with_leading_zero
+   ./build_single_point_cases_equilib_CZ2.sh $number_with_leading_zero
    #echo $number_with_leading_zero
 done
 

@@ -9,7 +9,7 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="STAN_trans_1951_2019_111323"
+export CASE_NAME="STAN_trans_1870_1951_111323"
 export NINST=54
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -39,14 +39,14 @@ export MACH="cheyenne"
 export PROJECT="UCDV0027"
 
 # Set driver data
-export SITE_NAME="stan_wrf_1950_2020" # dir for site-specific datasets
+export SITE_NAME="stan_wrf_1950_1980" # dir for site-specific datasets
 export SITE_BASE_PATH="/glade/scratch/adamhb/my_subset_data" # dir for site datasets
 export SITE_PATH="${SITE_BASE_PATH}/${SITE_NAME}"
 
 # CZ2
 #export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
 
-#STAN
+# STAN
 export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230323.nc"
 
 export SURF_PATH="${SITE_PATH}/${SURF_DATA}"
@@ -84,25 +84,26 @@ cd ${CASE_PATH}
 #./xmlchange PTS_LON=240.7434
 #./xmlchange PTS_LAT=37.0311
 
-#STAN
+# STAN
 ./xmlchange PTS_LON=240.0213
 ./xmlchange PTS_LAT=38.1776
 
 ./xmlchange DATM_YR_START=1951 #get 1950 data in there too if it exists (check email from Xiulin)
-./xmlchange DATM_YR_END=2019
+./xmlchange DATM_YR_END=1979
 ./xmlchange CLM_FORCE_COLDSTART="off"
 DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
 ./xmlchange RUN_TYPE="hybrid"
 ./xmlchange RUN_REFDIR=""
-./xmlchange RUN_REFDATE="1951-01-01"
-./xmlchange RUN_REFCASE="STAN_trans_1870_1951_111323_-17e2acb6a_FATES-8a054a12"
+./xmlchange RUN_REFDATE="2300-01-01"
+./xmlchange RUN_REFCASE="STAN_equilibrium_111023_-17e2acb6a_FATES-8a054a12"
 ./xmlchange GET_REFCASE="FALSE"
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=68
+./xmlchange STOP_N=81
 ./xmlchange RESUBMIT=0
-./xmlchange RUN_STARTDATE="1951-01-01"
+./xmlchange DOUT_S_SAVE_INTERIM_RESTART_FILES="TRUE"
+./xmlchange RUN_STARTDATE="1870-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"
 ./xmlchange JOB_QUEUE=${QUEUE}
@@ -122,8 +123,8 @@ echo $expstr
 
 # Update the transient CO2 stream
 cat >> user_nl_datm_streams_${expstr} <<EOF
-co2tseries.20tr:year_first=1951
-co2tseries.20tr:year_align=1951
+co2tseries.20tr:year_first=1870
+co2tseries.20tr:year_align=1870
 EOF
 
 

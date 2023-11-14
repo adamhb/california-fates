@@ -9,7 +9,7 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 #Name the case
-export CASE_NAME="CZ2_trans_110923"
+export CASE_NAME="CZ2_trans_1935_1951_111023"
 export NINST=54
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -39,7 +39,7 @@ export MACH="cheyenne"
 export PROJECT="UCDV0027"
 
 # Set driver data
-export SITE_NAME="CZ2_wrf_1950_1980" # dir for site-specific datasets
+export SITE_NAME="CZ2_wrf_1950_2020" # dir for site-specific datasets
 export SITE_BASE_PATH="/glade/scratch/adamhb/my_subset_data" # dir for site datasets
 export SITE_PATH="${SITE_BASE_PATH}/${SITE_NAME}"
 export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
@@ -48,7 +48,7 @@ export METD_CALENDAR="NO_LEAP"
 
 # Run settings 
 export RUN_TIME="12:00:00"
-export QUEUE="economy"
+export QUEUE="regular"
 export DEBUG_LEVEL=0
 
 # Output settings
@@ -76,21 +76,23 @@ cd ${CASE_PATH}
 
 ./xmlchange PTS_LON=240.7434
 ./xmlchange PTS_LAT=37.0311
-./xmlchange DATM_YR_START=1951 #get 1950 data in there too if it exists (check email from Xiulin)
+./xmlchange DATM_YR_START=1960 #get 1950 data in there too if it exists (check email from Xiulin)
 ./xmlchange DATM_YR_END=1979
+./xmlchange DATM_YR_ALIGN=1960
 ./xmlchange CLM_FORCE_COLDSTART="off"
 DATM_PATH="${SITE_PATH}/CLM1PT_data"
 
 # Run settings
 ./xmlchange RUN_TYPE="hybrid"
-./xmlchange RUN_REFDIR="/glade/scratch/adamhb/archive/CZ2_equilibrium_110523_01_-17e2acb6a_FATES-8a054a12/run"
-./xmlchange RUN_REFDATE="2300-01-01"
-./xmlchange RUN_REFCASE="CZ2_equilibrium_110523_01_-17e2acb6a_FATES-8a054a12"
+./xmlchange RUN_REFDIR=""
+./xmlchange RUN_REFDATE="1935-01-01"
+./xmlchange RUN_REFCASE="CZ2_trans_110923_-17e2acb6a_FATES-8a054a12"
 ./xmlchange GET_REFCASE="FALSE"
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=65
-./xmlchange RESUBMIT=1
-./xmlchange RUN_STARTDATE="1870-01-01"
+./xmlchange STOP_N=16
+./xmlchange RESUBMIT=0
+./xmlchange DOUT_S_SAVE_INTERIM_RESTART_FILES="TRUE"
+./xmlchange RUN_STARTDATE="1935-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"
 ./xmlchange JOB_QUEUE=${QUEUE}
@@ -110,8 +112,8 @@ echo $expstr
 
 # Update the transient CO2 stream
 cat >> user_nl_datm_streams_${expstr} <<EOF
-co2tseries.20tr:year_first=1870
-co2tseries.20tr:year_align=1870
+co2tseries.20tr:year_first=1935
+co2tseries.20tr:year_align=1935
 EOF
 
 

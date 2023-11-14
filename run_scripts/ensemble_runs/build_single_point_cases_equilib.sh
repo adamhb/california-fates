@@ -11,8 +11,8 @@
 case_number=$1
 
 #Name the case
-export CASE_NAME="CZ2_equilibrium_110523_$case_number"
-export NINST=72
+export CASE_NAME="STAN_equilibrium_111023_$case_number"
+export NINST=54
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -27,11 +27,11 @@ export CASE_PATH="${CASE_ROOT}/${CASE_NAME}"
 # Set fates parameter file(s)
 
 # Base name of your parameter file (without the _0001, etc)
-export PARAM_FILE_BASE_NAME=CZ2_equilibrium_110523
+export PARAM_FILE_BASE_NAME=ca_5pfts_100523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/CZ2_equilibrium_110523_$case_number
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/STAN_equilibrium_111023_$case_number
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -41,10 +41,14 @@ export MACH="cheyenne"
 export PROJECT="UCDV0027"
 
 # Set driver data
-export SITE_NAME="CZ2_wrf_1950_1980" # dir for site-specific datasets
+export SITE_NAME="stan_wrf_1950_1980" # dir for site-specific datasets
 export SITE_BASE_PATH="/glade/scratch/adamhb/my_subset_data" # dir for site datasets
 export SITE_PATH="${SITE_BASE_PATH}/${SITE_NAME}"
-export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
+# CZ2
+#export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230301.nc"
+# STAN
+export SURF_DATA="surfdata_my_point_hist_16pfts_Irrig_CMIP6_ahb_simyr2000_c230323.nc"
+
 export SURF_PATH="${SITE_PATH}/${SURF_DATA}"
 export METD_CALENDAR="NO_LEAP"
 
@@ -70,8 +74,15 @@ cd ${CASE_PATH}
 ./xmlchange DATM_MODE="1PT"
 ./xmlchange CLM_CO2_TYPE="constant"
 ./xmlchange CCSM_CO2_PPMV=280
-./xmlchange PTS_LON=240.7434
-./xmlchange PTS_LAT=37.0311
+
+# CZ2
+#./xmlchange PTS_LON=240.7434
+#./xmlchange PTS_LAT=37.0311
+
+# STAN
+./xmlchange PTS_LON=240.0213
+./xmlchange PTS_LAT=38.1776
+
 ./xmlchange DATM_YR_START=1951 #get 1950 data in there too if it exists (check email from Xiulin)
 ./xmlchange DATM_YR_END=1979
 ./xmlchange CLM_FORCE_COLDSTART="on"

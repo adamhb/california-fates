@@ -14,17 +14,25 @@ Output:
 '''
 
 import sys
-sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
-import numpy as np
-import esm_tools
-import pandas as pd
 
 def main(tags,output_path,c1,c2,c3,c4):
+    sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
+    import numpy as np
+    import esm_tools
+    import pandas as pd
+    import os
+
+    dir_name = os.path.dirname(output_path)
+    if not os.path.isdir(dir_name):
+        
+        raise ValueError("Output path {} not valid".format(output_path))
 
     tags = np.load(tags)
     tags = esm_tools.inst_to_tag(tags)
 
     cases = [c1,c2,c3,c4]
+    
+
     years = [list(range(1820, 1870)), list(range(1870,1951)),\
             list(range(1951,2020)), list(range(2015,2099))]
 
@@ -36,8 +44,13 @@ def main(tags,output_path,c1,c2,c3,c4):
     ts = pd.DataFrame()
     for i,c in enumerate(cases):
         for t in tags:
-            tmp = esm_tools.get_ts(c,years[i],t)
-            ts = pd.concat([ts,tmp],axis = 0)
+            if (c == None) or (c == "None"):
+                print("Encountered None")
+                continue
+
+            else:
+                tmp = esm_tools.get_ts(c,years[i],t)
+                ts = pd.concat([ts,tmp],axis = 0)
     
     ts.to_csv(output_path)
 

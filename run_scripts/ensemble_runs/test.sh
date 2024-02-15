@@ -1,9 +1,18 @@
 #!/bin/bash
 
-case_status_2015_2098=/glade/u/home/adamhb/cases/supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69/CaseStatus
+# Function to display usage information
+usage() {
+  echo "Usage: $0 [arg1] [arg2]" >&2
+  exit 1
+}
 
-if tail -n 2 "${case_status_2015_2098}" | head -n 1 | grep -q "st_archive success"; then
-    echo "case done"
-else
-    echo "case not done"
+# Display help if no arguments are provided or if the user specifies --help
+if [[ $# -eq 0 || "$1" == "--help" ]]; then
+  usage
 fi
+
+# Display positional arguments
+echo "Positional arguments: $@"
+
+# Your script logic goes here
+

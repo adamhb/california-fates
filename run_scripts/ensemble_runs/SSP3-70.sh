@@ -10,7 +10,7 @@
 
 
 CASE_TAG=$1
-FATES_PARAM_DIR=$2
+FATES_PARAM_DIR=$2 #Full path
 
 #Name the case
 export CASE_NAME="${CASE_TAG}-2015-2098"

@@ -42,13 +42,6 @@ def main(peas_metrics,sup_metrics,output_path):
     # 2. More severe fire
     # 3. Increased tree stem density
    
-    print('peas',peas.info())
-    print('sup', sup.info())
-
-    print(peas['Burned_area'] > sup['Burned_area'])
-
-    print("Peas:",peas['Burned_area'])
-    print("Sup:",sup['Burned_area'])
 
     passing = np.array(
     (peas['Burned_area'] > sup['Burned_area']) &\

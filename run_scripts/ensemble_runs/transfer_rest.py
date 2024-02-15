@@ -8,13 +8,13 @@ Inputs:
 
 
 import sys
-sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
-import esm_tools
-import os
-import shutil
 
 
 def main(src_rundir, dst_rundir):
+    sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
+    import esm_tools
+    import os
+    import shutil
 
     print("Copying files from {} to {}".format(src_rundir,dst_rundir))
 

@@ -1,0 +1,6 @@
+case_tag="HF_020424"
+new_param_dir_name="params_HF_020424"
+param_name="fates_fire_nignitions"
+param_value=-999
+ref_param_dir_name="STAN_equilibrium_110623"
+peas_metrics=/glade/work/adamhb/processed_output/CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69/peas_020424.csv

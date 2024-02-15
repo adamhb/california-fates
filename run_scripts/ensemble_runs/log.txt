@@ -1,0 +1,11 @@
+
+Script is being sweeped Tue 13 Feb 2024 11:01:02 AM MST
+Case tag: HF_020424
+1870 to 1951 case already exists
+1951 to 2020 case already exists
+2015 to 2098 case already exists
+Early 20th century metrics file already exists
+Late 20th century metrics file already exists
+Not a benchmarking run using default array
+/glade/work/adamhb/processed_output/HF_020424/ts_HF_020424.csv already exists
+End of script

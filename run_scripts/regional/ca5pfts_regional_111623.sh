@@ -75,8 +75,8 @@ export SIMUL_ROOT="/glade/scratch/adamhb/archive"
 export COMP=""
 export CO2=280
 #export CASE_PREFIX="strip-AVBA-N01T09-transient"
-export CASE_PREFIX="sierra-CZ-0009-112823"
-export FATES_PARAMFILE="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/CZ2_equilibrium_110523_01/CZ2_equilibrium_110523_0049.nc"
+export CASE_PREFIX="sierra-CZ-0047-112823"
+export FATES_PARAMFILE="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/CZ2_equilibrium_110523_01/CZ2_equilibrium_110523_0062.nc"
 
 #export CASE_PREFIX="test"
 #---~---

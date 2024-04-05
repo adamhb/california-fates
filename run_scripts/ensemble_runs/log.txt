@@ -1,11 +1,482 @@
-
-Script is being sweeped Tue 13 Feb 2024 11:01:02 AM MST
-Case tag: HF_020424
-1870 to 1951 case already exists
-1951 to 2020 case already exists
-2015 to 2098 case already exists
-Early 20th century metrics file already exists
-Late 20th century metrics file already exists
-Not a benchmarking run using default array
-/glade/work/adamhb/processed_output/HF_020424/ts_HF_020424.csv already exists
-End of script
+nohup: ignoring input
+starting timeseries script
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+/glade/u/home/adamhb/Earth-System-Model-Tools/esm_tools.py:898: RuntimeWarning: invalid value encountered in long_scalars
+  return n_months_high_sev / n_fire_months * 100
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+/glade/u/home/adamhb/Earth-System-Model-Tools/esm_tools.py:898: RuntimeWarning: invalid value encountered in long_scalars
+  return n_months_high_sev / n_fire_months * 100
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+/glade/u/home/adamhb/Earth-System-Model-Tools/esm_tools.py:898: RuntimeWarning: invalid value encountered in long_scalars
+  return n_months_high_sev / n_fire_months * 100
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+/glade/u/home/adamhb/Earth-System-Model-Tools/esm_tools.py:898: RuntimeWarning: invalid value encountered in long_scalars
+  return n_months_high_sev / n_fire_months * 100
+Working on supIg105_020224-1870-1951_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+/glade/u/home/adamhb/Earth-System-Model-Tools/esm_tools.py:898: RuntimeWarning: invalid value encountered in long_scalars
+  return n_months_high_sev / n_fire_months * 100
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on supIg105_020224-1951-2020_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on supIg105_020224-2015-2098_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+finished sup ts
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on supIg105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+finished sup CO2 const
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on CZ2_equilibrium_011824_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on HF_020424-1870-1951_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on HF_020424-1951-2020_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on HF_020424-2015-2098_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+finished HF original nignition
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on HF_ig105_021324-2015-2098_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+finished HF n_ignition 105
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Encountered None
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0002
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0008
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0014
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0015
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0022
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0024
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0025
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0026
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0030
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0033
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0046
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0048
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0050
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0051
+-- your data have been read in -- 
+Working on HFig105ConstCO2_021924-2015-2098_-17e2acb6a_FATES-5b076b69 - 0052
+-- your data have been read in -- 
+finsihed HF n_ignition 105 with const CO2

@@ -1,0 +1,10 @@
+perturb,param,pft,organ,value_min,value_max,apriori_value,source_min,source_max,source_apriori,comments,link,additional_values
+1,fates_leaf_slatop,5,NaN,0.01698,0.022378,0.018568499357343,TRY,TRY,TRY,,,
+1,fates_stoich_nitr,5,1,0.0306,0.039,0.034243333333333,TRY,TRY,TRY,,,
+1,fates_wood_density,5,NaN,0.51,0.72,0.58,TRY,TRY,TRY,,,
+1,fates_leaf_vcmax25top,5,NaN,50,70,62,NA,NA,fates_default,,,
+1,fates_alloc_storage_cushion,5,NaN,1.1,1.8,1.2,NA,NA,fates_default,,,
+1,fates_phen_mindayson,0,NaN,0,90,NA,NA,NA,NA,,,
+1,fates_phen_mindaysoff,0,NaN,0,90,NA,NA,NA,NA,,,
+1,fates_phen_coldtemp,0,NaN,5,10,NA,NA,NA,NA,,,
+1,fates_phen_chilltemp,0,NaN,5,15,NA,NA,NA,NA,,,

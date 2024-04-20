@@ -1,0 +1,5 @@
+perturb,param,pft,organ,value_min,value_max,apriori_value,source_min,source_max,source_apriori,comments,link,additional_values
+1,fates_phen_mindayson,0,NaN,0,60,NA,NA,NA,NA,,,
+1,fates_phen_coldtemp,0,NaN,5,10,NA,NA,NA,NA,,,
+1,fates_phen_chilltemp,0,NaN,5,15,NA,NA,NA,NA,,,
+1,fates_phen_flush_fraction,5,NaN,0.4,0.9,NA,NA,NA,NA,,,

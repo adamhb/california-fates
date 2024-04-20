@@ -1,0 +1,8 @@
+s,pft,organ,value_min,value_max
+fates_allom_d2ca_coefficient_min,1,NaN,0.257,0.37
+fates_allom_d2ca_coefficient_min,4,NaN,0.1799,0.2685
+fates_allom_d2ca_coefficient_min,5,NaN,0.6332,1.6444
+fates_leaf_vcmax25top,1,NaN,48,76
+fates_leaf_vcmax25top,4,NaN,60,98
+fates_leaf_vcmax25top,5,NaN,45,83
+fates_allom_la_per_sa_int,4,NaN,0.07,0.4

@@ -16,7 +16,7 @@ Output:
 import sys
 
 def main(src_data_path, start_yr, end_yr, dst_file_path):
-    
+    import sys
     sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
     import os
     import esm_tools
@@ -54,11 +54,11 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
     # These tags passed the forest structural criteria for a pre-Euro-American forest
     # as simulated on derecho. See /glade/work/adamhb/processed_output/filter_PEAS.py for details
     
-    inst_tags = ['0001', '0002', '0003', '0005', '0008', '0013', '0014',
-    '0015', '0017', '0022', '0023', '0024', '0025', '0026', '0027', '0029',
-    '0030', '0031', '0033', '0038', '0042', '0045', '0046', '0048', '0050', '0051', '0052', '0053']
+    #inst_tags = ['0001', '0002', '0003', '0005', '0008', '0013', '0014',
+    #'0015', '0017', '0022', '0023', '0024', '0025', '0026', '0027', '0029',
+    #'0030', '0031', '0033', '0038', '0042', '0045', '0046', '0048', '0050', '0051', '0052', '0053']
 
-
+    inst_tags = esm_tools.inst_to_tag(list(range(1,129)))
 
     for inst_tag in inst_tags:
         

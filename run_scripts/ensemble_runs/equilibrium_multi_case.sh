@@ -8,8 +8,10 @@
 # This script was developed based on prior
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
+case_number=$1
+
 #Name the case
-export CASE_NAME="CZ2_equilibrium_041924"
+export CASE_NAME="CZ2_equilibrium_041924_$case_number"
 export NINST=128
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -29,7 +31,7 @@ export PARAM_FILE_BASE_NAME=ca_5pfts_100523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/CZ2_equilibrium_040924
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/afterBugFix_1280_041923_$case_number
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -78,8 +80,8 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
 ./xmlchange STOP_N=50
-./xmlchange RESUBMIT=7
-./xmlchange RUN_STARTDATE="1470-01-01"
+./xmlchange RESUBMIT=2
+./xmlchange RUN_STARTDATE="1170-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"
 ./xmlchange JOB_PRIORITY=${QUEUE}
@@ -156,7 +158,8 @@ done
 
 ./case.build --clean
 ./case.build
-
+./case.submit
 # Return to the original path.
 cd ${HERE_PATH}
-echo "Created new case: ${CASE_PATH}"
+echo "Submitted new case: ${CASE_PATH}" >> log.txt
+qstat -u adamhb > qstat_log.txt

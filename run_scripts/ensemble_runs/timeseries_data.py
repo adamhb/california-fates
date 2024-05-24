@@ -34,7 +34,7 @@ def main(tags,output_path,c1,c2,c3,c4):
     
 
     years = [list(range(1820, 1870)), list(range(1870,1951)),\
-            list(range(1951,2020)), list(range(2015,2099))]
+            list(range(1951,1996)), list(range(2015,2099))]
 
 
     #years = [list(range(1820, 1823)), list(range(1870,1873)),\

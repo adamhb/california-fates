@@ -11,8 +11,8 @@
 case_number=$1
 
 #Name the case
-export CASE_NAME="ml_supported_ensemble_050224_$case_number"
-export NINST=128
+export CASE_NAME="equilibrium_700yrs_050924_$case_number"
+export NINST=82
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
 export HOSTMODEL_PATH=${HOME}/CTSM
@@ -31,7 +31,7 @@ export PARAM_FILE_BASE_NAME=ca_5pfts_100523
 
 # Directory where the parameter files are stored
 export PARAM_DIR_BASE=${HOME}/ahb_params/fates_api_25
-export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/ml_supported_ensemble_2560_050224_$case_number
+export PARAM_DIR=${PARAM_DIR_BASE}/ensembles/equilibrium_700yrs_050924_$case_number
 export PARAM_FILE_BASE_PATH=${PARAM_DIR}/${PARAM_FILE_BASE_NAME}
 
 # Define the component settings
@@ -80,7 +80,7 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 # Run settings
 ./xmlchange STOP_OPTION="nyears"
 ./xmlchange STOP_N=50
-./xmlchange RESUBMIT=3
+./xmlchange RESUBMIT=13
 ./xmlchange RUN_STARTDATE="1170-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

@@ -8,11 +8,11 @@
 # This script was developed based on prior
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
-CASE_TAG="sup_043024"
-FATES_PARAM_DIR="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/sup_042524" #Full path to parameter directory
-USER_NINST=99
-USER_RUN_REFDATE="1620-01-01"
-USER_RUN_REFCASE="CZ2_equilibrium_700yrs_042524_01_-17e2acb6a_FATES-1449c787"
+CASE_TAG="old_growth_no_sup_051624"
+FATES_PARAM_DIR="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/equilibrium_700yrs_050924_01_inst_80_01" #Full path to parameter directory
+USER_NINST=80
+USER_RUN_REFDATE="1870-01-01"
+USER_RUN_REFCASE="equilibrium_700yrs_050924_01_-17e2acb6a_FATES-1449c787"
 
 #Name the case
 export CASE_NAME="${CASE_TAG}-1870-1951"
@@ -62,7 +62,7 @@ export METD_CALENDAR="NO_LEAP"
 
 # Run settings 
 export RUN_TIME="12:00:00"
-export QUEUE="regular"
+export QUEUE="priority"
 export DEBUG_LEVEL=0
 
 # Output settings

@@ -8,11 +8,11 @@
 # This script was developed based on prior
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
-CASE_TAG="sup_043024"
-FATES_PARAM_DIR="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/sup_042524" #Full path to parameter directory
-USER_NINST=99
+CASE_TAG=$1
+FATES_PARAM_DIR=$2 #Full path to parameter directory
+USER_NINST=81
 USER_RUN_REFDATE="1951-01-01"
-USER_RUN_REFCASE="sup_043024-1870-1951_-17e2acb6a_FATES-1449c787"
+USER_RUN_REFCASE="${CASE_TAG}-1870-1951_-17e2acb6a_FATES-1449c787"
 
 
 
@@ -63,7 +63,7 @@ export METD_CALENDAR="NO_LEAP"
 
 # Run settings 
 export RUN_TIME="12:00:00"
-export QUEUE="regular"
+export QUEUE="priority"
 export DEBUG_LEVEL=0
 
 # Output settings

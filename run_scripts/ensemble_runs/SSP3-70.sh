@@ -9,15 +9,23 @@
 # scripts developed by Marcos Longo, Polly Buotte, and Jessie Needham
 
 
-CASE_TAG="sup_043024"
-FATES_PARAM_DIR="/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/sup_042524" #Full path to parameter directory
-USER_NINST=99
+CASE_TAG=supIg_1.25_052124_continuous
+FATES_PARAM_DIR=/glade/u/home/adamhb/ahb_params/fates_api_25/ensembles/supIg_1.25_051424_01_without_0061 #Full path to parameter directory
+USER_NINST=80
 USER_RUN_REFDATE="2015-01-01"
-USER_RUN_REFCASE="sup_043024-1951-2020_-17e2acb6a_FATES-1449c787"
-
+USER_RUN_REFCASE="supIg_1.25_051424-1951-2020_-17e2acb6a_FATES-1449c787"
+TREATED=1
 
 #Name the case
-export CASE_NAME="${CASE_TAG}-2015-2098"
+
+if [ "$TREATED" -eq 0 ]; then
+    echo "Untreated case"
+    export CASE_NAME="${CASE_TAG}-2015-2098"
+else
+    echo "Treated case"
+    export CASE_NAME="${CASE_TAG}-2015-2098-TREATED"
+fi
+
 export NINST=${USER_NINST}
 export CIME_PATH="${HOME}/CTSM/cime/scripts" # dir for cime scripts
 export HERE_PATH=$(pwd)
@@ -62,7 +70,7 @@ export METD_CALENDAR="NO_LEAP"
 
 # Run settings 
 export RUN_TIME="12:00:00"
-export QUEUE="regular"
+export QUEUE="premium"
 export DEBUG_LEVEL=0
 
 # Output settings
@@ -108,9 +116,9 @@ DATM_PATH="${SITE_PATH}/CLM1PT_data"
 ./xmlchange RUN_REFCASE=${USER_RUN_REFCASE}
 ./xmlchange GET_REFCASE="FALSE"
 ./xmlchange STOP_OPTION="nyears"
-./xmlchange STOP_N=42
-./xmlchange REST_N=42
-./xmlchange RESUBMIT=1
+./xmlchange STOP_N=14
+./xmlchange REST_N=14
+./xmlchange RESUBMIT=0
 ./xmlchange RUN_STARTDATE="2015-01-01"
 ./xmlchange CALENDAR="${METD_CALENDAR}"
 ./xmlchange JOB_WALLCLOCK_TIME="${RUN_TIME}"

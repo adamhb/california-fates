@@ -45,7 +45,8 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
                   "FailedPFTs","Pct_shrub_cover_canopy","Pct_shrub_cover","Combustible_fuel",
                   "Pct_conifer_cover_canopy","Pct_pine_cover_canopy","Pct_cedar_cover_canopy",
                   "Pct_fir_cover_canopy","Pct_oak_cover_canopy",
-                  "Burned_area","Pct_high_severity_1700","Pct_high_severity_3500"]
+                  "Burned_area","AWFI",
+                  "Pct_high_severity_1700","Pct_high_severity_3500","Pct_high_severity_1025"]
 
     bench_dict = {}
     for i in my_metrics:
@@ -163,6 +164,15 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
                 
         if "Pct_high_severity_3500" in bench_dict.keys():
             bench_dict["Pct_high_severity_3500"].append(esm_tools.get_PHS_FLI_thresh(ds_decadal,3500))
+
+        if "Pct_high_severity_1025" in bench_dict.keys():
+            bench_dict["Pct_high_severity_1025"].append(esm_tools.get_PHS_FLI_thresh(ds_decadal,1025))
+        
+        if "AWFI" in bench_dict.keys():
+            bench_dict["AWFI"].append(esm_tools.get_awfi(ds,over_time = False))
+
+
+
 
     # Write output to a csv
     pd.DataFrame(bench_dict).to_csv(dst_file_path)

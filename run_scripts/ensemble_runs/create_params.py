@@ -53,7 +53,7 @@ if __name__ == "__main__":
     if ("--help" in sys.argv) | (len(sys.argv) < 5):
         print("Usage: <ref_param_dir> <new_param_dir> <param_name> <new_param_value>")
         print("ref_param_dir: The reference directory containing parameter")
-        print("new_param_dir: The new directory")
+        print("new_param_dir: The new directory (full path)")
         print("param_name: The name of the fates param to change")
         print("new_param_value: The new value of the parameter") 
 

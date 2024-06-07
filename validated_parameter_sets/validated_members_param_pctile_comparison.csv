@@ -5,7 +5,9 @@ fates_alloc_storage_cushion,oak,42,49,56,58,42
 fates_allom_agb1,oak,97,34,98,91,45
 fates_allom_d2ca_coefficient_max,shrub,98,8,52,64,68
 fates_fire_alpha_SH,oak,94,48,60,3,40
+fates_fire_drying_ratio,all,63,39,73,8,83
 fates_fire_frac_resprout,shrub,60,5,70,55,19
+fates_frag_maxdecomp,all,87,98,10,81,42
 fates_frag_seed_decay_rate,shrub,66,11,33,62,85
 fates_leaf_slatop,cedar,97,56,73,92,34
 fates_leaf_slatop,fir,97,56,73,92,34

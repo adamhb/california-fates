@@ -16,7 +16,7 @@ Output:
 import sys
 
 def main(src_data_path, start_yr, end_yr, dst_file_path):
-    
+    import sys
     sys.path.append('/glade/u/home/adamhb/Earth-System-Model-Tools/')
     import os
     import esm_tools
@@ -45,7 +45,8 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
                   "FailedPFTs","Pct_shrub_cover_canopy","Pct_shrub_cover","Combustible_fuel",
                   "Pct_conifer_cover_canopy","Pct_pine_cover_canopy","Pct_cedar_cover_canopy",
                   "Pct_fir_cover_canopy","Pct_oak_cover_canopy",
-                  "Burned_area","Pct_high_severity_1700","Pct_high_severity_3500"]
+                  "Burned_area","AWFI",
+                  "Pct_high_severity_1700","Pct_high_severity_3500","Pct_high_severity_1025"]
 
     bench_dict = {}
     for i in my_metrics:
@@ -54,11 +55,11 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
     # These tags passed the forest structural criteria for a pre-Euro-American forest
     # as simulated on derecho. See /glade/work/adamhb/processed_output/filter_PEAS.py for details
     
-    inst_tags = ['0001', '0002', '0003', '0005', '0008', '0013', '0014',
-    '0015', '0017', '0022', '0023', '0024', '0025', '0026', '0027', '0029',
-    '0030', '0031', '0033', '0038', '0042', '0045', '0046', '0048', '0050', '0051', '0052', '0053']
+    #inst_tags = ['0001', '0002', '0003', '0005', '0008', '0013', '0014',
+    #'0015', '0017', '0022', '0023', '0024', '0025', '0026', '0027', '0029',
+    #'0030', '0031', '0033', '0038', '0042', '0045', '0046', '0048', '0050', '0051', '0052', '0053']
 
-
+    inst_tags = esm_tools.inst_to_tag(list(range(1,129)))
 
     for inst_tag in inst_tags:
         
@@ -163,6 +164,15 @@ def main(src_data_path, start_yr, end_yr, dst_file_path):
                 
         if "Pct_high_severity_3500" in bench_dict.keys():
             bench_dict["Pct_high_severity_3500"].append(esm_tools.get_PHS_FLI_thresh(ds_decadal,3500))
+
+        if "Pct_high_severity_1025" in bench_dict.keys():
+            bench_dict["Pct_high_severity_1025"].append(esm_tools.get_PHS_FLI_thresh(ds_decadal,1025))
+        
+        if "AWFI" in bench_dict.keys():
+            bench_dict["AWFI"].append(esm_tools.get_awfi(ds,over_time = False))
+
+
+
 
     # Write output to a csv
     pd.DataFrame(bench_dict).to_csv(dst_file_path)

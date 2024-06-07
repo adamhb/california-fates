@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<all>
+  <notes>Parameters selected by P. Buotte for pine, cedar, and fir pfts (Polly's parameter set 7). Parameters for the montane shrub pft selected by Adam H-B August 2022. Oak params based on Charlie's blue oak, but tweaked significantly to be more like a canyon live oak. </notes>
+  <base_file>/glade/u/home/adamhb/ahb_params/fates_api_25/fates_ca-ahb_default_080623.cdl</base_file>
+  <new_file>/glade/u/home/adamhb/ahb_params/fates_api_25/ca_ahb_5pfts_041624.cdl</new_file>
+  <pft_list>2,2,2,7,4</pft_list>
+  <parameters>
+        <fates_pftname> "pine","incense_cedar","white_fir","montane_shrub","evg_oak" </fates_pftname>
+        <fates_alloc_storage_cushion> 1.24553934288032,1.12214107541367,1.12214107541367,1.12214,1.4 </fates_alloc_storage_cushion>
+        <fates_allom_agb1> 0.064730724,0.064730724,0.064730724,0.02578,0.08533950 </fates_allom_agb1>
+        <fates_allom_agb2> 2.4821603,2.4821603,2.4821603,2.586,2.48811258 </fates_allom_agb2>
+        <fates_allom_agb3> -999,-999,-999,-999,-999 </fates_allom_agb3>
+        <fates_allom_agb4> -999,-999,-999,-999,-999 </fates_allom_agb4>
+        <fates_allom_d2bl1> 0.020336868,0.020336868,0.274963964,0.01919,0.057580762 </fates_allom_d2bl1>
+        <fates_allom_d2bl2> 2.01121055798523,2.01121055798523,1.43713312921275,1.856509,1.892592 </fates_allom_d2bl2>
+        <fates_allom_d2bl3> -999,-999,-999,-999,-999 </fates_allom_d2bl3>
+        <fates_allom_blca_expnt_diff> -0.793196,-0.793196,-0.21911,-0.5733,-0.68400162 </fates_allom_blca_expnt_diff>
+        <fates_allom_d2ca_coefficient_max> 0.3135253,0.3135253,0.3135253,0.2242,1.138643 </fates_allom_d2ca_coefficient_max>
+        <fates_allom_d2ca_coefficient_min> 0.3135253,0.3135253,0.3135253,0.2242,1.138643 </fates_allom_d2ca_coefficient_min>
+        <fates_allom_d2h1> 0.8888,0.8888,0.8888,0.6557,0.564913 </fates_allom_d2h1>
+        <fates_allom_d2h2> -0.1298955,-0.1298955,-0.1298955,-0.52838,0.1234176 </fates_allom_d2h2>
+        <fates_allom_d2h3> -999,-999,-999,-999,-999 </fates_allom_d2h3>
+        <fates_allom_dbh_maxheight> 90,90,90,12.6,65 </fates_allom_dbh_maxheight>
+        <fates_allom_la_per_sa_int> 0.4,0.4,0.4,0.316,0.8 </fates_allom_la_per_sa_int>
+        <fates_fire_bark_scaler> 0.083,0.089,0.067,0.005,0.02 </fates_fire_bark_scaler>
+        <fates_fire_crown_kill> 1,1,1,1,1 </fates_fire_crown_kill>
+        <fates_leaf_slamax> 0.0121158478477038,0.0125236252460386,0.0124467586502638,0.0185,0.013 </fates_leaf_slamax>
+        <fates_leaf_slatop> 0.00935078582102433,0.00963922964139882,0.00954869772982605,0.0185,0.013 </fates_leaf_slatop>
+        <fates_leaf_stomatal_slope_ballberry> 8.92752445489168,9.02913312861594,9.37279851576638,8,8.88 </fates_leaf_stomatal_slope_ballberry>
+        <fates_mort_bmort> 0.004,0.0035,0.004,0.02,0.004  </fates_mort_bmort>
+        <fates_mort_hf_sm_threshold> 0.2,0.2,0.2,0.2,0.2 </fates_mort_hf_sm_threshold>
+        <fates_mort_scalar_cstarvation> 0.2,0.2,0.2,0.2,0.2 </fates_mort_scalar_cstarvation>
+        <fates_wood_density> 0.445928,0.483578495588044,0.482019615680182,0.706,0.7 </fates_wood_density>
+        <fates_leaf_vcmax25top> 57.0,49.5167778402415,37.0,62.0,61.0 </fates_leaf_vcmax25top>
+        <fates_fire_cg_strikes> 1.0 </fates_fire_cg_strikes>
+        <fates_fire_drying_ratio> 66000 </fates_fire_drying_ratio>
+        <fates_fire_threshold> 50 </fates_fire_threshold>
+        <fates_stoich_nitr> 0.0252467722761775,0.0231905,0.0183051402474497,0.035,0.0208,0.022,0.019,0.019,0.028,0.015,1e-08,1e-08,1e-08,1e-08,1e-08,0.0066,0.0066,0.0066,0.0047,0.0047 </fates_stoich_nitr>
+        <fates_stoich_phos> 0.0029,0.0029,0.0029,0.0033,0.0033,0.0024,0.0024,0.0024,0.0024,0.0024,1e-09,1e-09,1e-09,1e-09,1e-09,0.00047,0.00047,0.00047,0.00047,0.00047 </fates_stoich_phos>
+        <fates_turnover_branch> 50,50,50,20,40 </fates_turnover_branch>
+        <fates_allom_crown_depth_frac> 0.5,0.9,0.9,0.95,0.2 </fates_allom_crown_depth_frac>
+        <fates_allom_fnrt_prof_a> 5,5,5,7,7 </fates_allom_fnrt_prof_a>
+        <fates_allom_fnrt_prof_b> 1,1,1,1.5,1 </fates_allom_fnrt_prof_b>
+        <fates_turb_leaf_diameter> 0.004,0.004,0.004,0.04,0.04 </fates_turb_leaf_diameter>
+        <fates_alloc_store_priority_frac> 0.7,0.7,0.7,0.8,0.8 </fates_alloc_store_priority_frac>
+        <fates_recruit_init_density> 0.0008,0.0008,0.0008,0.0008,0.0008 </fates_recruit_init_density>
+        <fates_rad_leaf_rhonir> 0.35,0.35,0.35,0.46,0.046 </fates_rad_leaf_rhonir>
+        <fates_rad_leaf_rhovis> 0.07,0.07,0.07,0.11,0.11 </fates_rad_leaf_rhovis>
+        <fates_rad_stem_rhonir> 0.39,0.39,0.39,0.49,0.49 </fates_rad_stem_rhonir>
+        <fates_rad_stem_rhovis> 0.16,0.16,0.16,0.21,0.21 </fates_rad_stem_rhovis>
+        <fates_recruit_seed_alloc> 0,0,0,0,0 </fates_recruit_seed_alloc>
+        <fates_recruit_seed_alloc_mature> 0.392860281514004,0.270920433068498,0.270920433068498,0.4,0.3 </fates_recruit_seed_alloc_mature>
+        <fates_recruit_seed_dbh_repro_threshold> 71.7553673498333,71.7553673498333,71.7553673498333,3,50 </fates_recruit_seed_dbh_repro_threshold>
+        <fates_nonhydro_smpsc> -252351,-400000,-200000,-760000,-700000 </fates_nonhydro_smpsc>
+        <fates_rad_leaf_taunir> 0.1,0.1,0.1,0.33,0.33 </fates_rad_leaf_taunir>
+        <fates_rad_leaf_tauvis> 0.05,0.05,0.05,0.06,0.06 </fates_rad_leaf_tauvis>
+        <fates_turnover_leaf> 4.9355,7.63404426218022,12.5910838518524,1.5,1.5 </fates_turnover_leaf>
+        <fates_recruit_height_min> 0.7,0.7,0.7,0.7,0.7 </fates_recruit_height_min>
+        <fates_allom_amode> 2,2,2,2,2 </fates_allom_amode>
+        <fates_allom_lmode> 3,3,3,3,3 </fates_allom_lmode>
+        <fates_allom_hmode> 1,1,1,1,1 </fates_allom_hmode>
+        <fates_mort_scalar_hydrfailure> 0.3,0.3,0.3,0.3,0.3 </fates_mort_scalar_hydrfailure>
+        <fates_recruit_seed_supplement> 0.0001,0.0001,0.0001,0.0001,0.0001 </fates_recruit_seed_supplement>
+        <fates_recruit_seed_germination_rate> 0.5,0.5,0.5,0.01,0.4 </fates_recruit_seed_germination_rate>
+        <fates_frag_seed_decay_rate> 0.95,0.95,0.95,0.01,0.51 </fates_frag_seed_decay_rate>
+        <fates_mort_ip_size_senescence> 200000,200000,200000,20,200000 </fates_mort_ip_size_senescence>
+        <fates_mort_r_size_senescence> 0.3,0.3,0.3,0.6,0.3 </fates_mort_r_size_senescence>
+        <fates_mort_ip_age_senescence> 200000,200000,200000,70,200000 </fates_mort_ip_age_senescence>
+        <fates_mort_r_age_senescence> 0.3,0.3,0.3,0.1,0.3 </fates_mort_r_age_senescence>
+        <fates_comp_excln> 3 </fates_comp_excln>
+        <fates_fire_nignitions> 0.02 </fates_fire_nignitions>
+        <fates_fire_alpha_SH> 0.1, 0.1, 0.1, 0.1, 0.1 </fates_fire_alpha_SH>
+        <fates_grperc> 0.11,0.11,0.11,0.11,0.11 </fates_grperc>
+        <fates_phen_evergreen> 1,1,1,1,1 </fates_phen_evergreen>
+        <fates_turnover_fnrt> 2,2,2,1.5,1.5 </fates_turnover_fnrt>
+        <fates_fire_resprouter> 0,0,0,1,1 </fates_fire_resprouter>
+        <fates_fire_frac_resprout> 0,0,0,0.5,0.99 </fates_fire_frac_resprout>
+        <fates_landuse_logging_coll_under_frac> 0.55983 </fates_landuse_logging_coll_under_frac>
+        <fates_landuse_logging_collateral_frac> 0.05 </fates_landuse_logging_collateral_frac>
+        <fates_landuse_logging_dbhmax> 10000 </fates_landuse_logging_dbhmax> 
+        <fates_landuse_logging_dbhmax_infra> 35 </fates_landuse_logging_dbhmax_infra>
+        <fates_landuse_logging_dbhmin> 25 </fates_landuse_logging_dbhmin>
+        <fates_landuse_logging_direct_frac> 0.50 </fates_landuse_logging_direct_frac>
+        <fates_landuse_logging_event_code> 20040501 </fates_landuse_logging_event_code>
+        <fates_landuse_logging_export_frac> 0.90 </fates_landuse_logging_export_frac>
+        <fates_landuse_logging_mechanical_frac> 0.05 </fates_landuse_logging_mechanical_frac>
+        <fates_recruit_inter_patch_disp_frac> 0.1,0.1,0.1,0.1,0.1 </fates_recruit_inter_patch_disp_frac>
+        <fates_disturbance_germ> 1,1,1,50,1 </fates_disturbance_germ>
+  </parameters>
+</all>
